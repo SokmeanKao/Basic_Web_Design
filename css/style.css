@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Merriweather&family=Nokora&family=Noto+Serif+Khmer:wght@700&family=Oswald&family=Roboto&family=Source+Code+Pro&family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Koulen&family=Merriweather&family=Nokora&family=Noto+Serif+Khmer:wght@700&family=Oswald&family=Roboto&family=Source+Code+Pro&family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.navbar-brand {
+  height: 100px;
+}
+.navbar-brand img {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.nav-item a {
+  font-family: "Koulen", cursive;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100px;
+  position: relative;
+  padding: 15px;
+  margin: 8px;
+  color: black;
+}
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.nav-item a:hover:after {
+  width: 100%;
+}
+.form-control {
+  font-size: 18px;
+  text-transform: none;
+}
+.btn {
+  font-size: 18px;
+  color: white;
+}
+.top-title h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.top-title h1:after,
+.top-title h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+.phonecp-title h1 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  border: 2px solid #222;
+  padding: 5px 11px 3px 11px;
+}
+.phonecp-title h1:before,
+.phonecp-title h1:after {
+  background-color: #ff3388;
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  bottom: 12px;
+}
+.phonecp-title h1:before {
+  left: -20px;
+}
+.phonecp-title h1:after {
+  right: -20px;
+}
+.title-heading {
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 50px;
+  border-bottom: 5px solid #000;
+  line-height: 40px;
+  overflow: hidden;
+}
+.title-heading span {
+  color: white;
+  background-color: #000;
+  font-size: 30px;
+  display: inline-block;
+  padding: 5px 30px 30px 30px;
+  border-radius: 20px;
+  font-family: monospace;
+}
+.card {
+  border: #ff3c78 solid 0px;
+}
+.card-img-top {
+  width: 1%;
+  height: 30%;
+}
+.card-title {
+  font-size: 25px;
+}
+.card-text {
+  font-size: 15px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1;
+}
+
+/* footer style */
+.footer-section {
+  background: gainsboro;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  color: white;
+}
+.cta-text h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-family: "Kantumruy Pro", sans-serif;
+}
+.cta-text span {
+  color: white;
+  font-size: 13px;
+  text-transform: none;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+  font-family: "Koulen", cursive;
+}
+.footer-social-icon span {
+  color: greenyellow;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Kantumruy Pro", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: white;
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: white;
+}
+.footer-widget ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-widget ul li a:hover {
+  color: yellow;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: skyblue;
+  padding: 13px 20px;
+  border: 1px solid beige;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: red;
+  text-decoration: none;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+@media screen and (max-width: 1400px) {
+  .form-control {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 15px;
+    color: white;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav-item a {
+    font-size: 18px;
+  }
+  .form-control {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 15px;
+    color: white;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-item a {
+    font-size: 20px;
+  }
+  .form-control {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 15px;
+    color: white;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ff3c78;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ff3c78;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ff3c78;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+  }
+}
